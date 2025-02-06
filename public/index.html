@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+    <!-- navbar  -->
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -20,28 +20,31 @@
     
     
    <div class="formulaire">
+    <!-- le text qui sera afficher dans l'image  -->
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Text</label>
         <input type="text" class="form-control" id="text-afficher" placeholder="Ecrire votre text ici">
     </div>
-
+   
+    <!-- input pour charger l'image souhaiter -->
     <div class="mb-3">
         <label for="formFile" class="form-label">Charger votre image ici</label>
         <input class="form-control" accept="image/*" type="file" id="image" >
     </div>
    
-
+    <!-- button pour génerer l'image  -->
     <button type="button" class="btn btn-primary" onclick="generateMeme()">Générer le meme</button>
-
+   <!-- button pour telecharger l'image lorsque on géner le text  sur l'image -->
     <button type="button" class="btn btn-success" onclick="downloadCanvas()" disabled  id="button-download">Télecharger le memes</button>
-  </div>   
-     
+  </div> 
+
+     <!-- canva afficher -->
     <canvas width="400" height="300" id="canvas">
 
-
-
+    <!-- lien vers le fichier js  -->
     <script src="script.js"></script>
 
+    <!-- les liens js de bootsrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
