@@ -1,0 +1,14 @@
+.formulaire {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+
+canvas {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
